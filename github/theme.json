@@ -1,0 +1,8 @@
+{
+    "themeApi": 1,
+    "name": "GitHub",
+    "description": "GitHub's look: flat surfaces on 1px lines, 6px corners, the Primer blue accent, the green primary button, GitHub's syntax palette and fonts. Brings GitHub Dark and Light Default as a pair.",
+    "author": "MasFana",
+    "version": "1.0.0",
+    "minPocket": "0.14.0"
+}

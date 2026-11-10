@@ -1,0 +1,25 @@
+# GitHub Light Default, ported from the GitHub Theme for VS Code (primer/github-vscode-theme, MIT), in Omarchy's
+# colors.toml format. The light half of the pair; colors.toml is GitHub Dark Default. On a white ground "lighter" and
+# "darker" are the two inset greys, the way GitHub tints a code block or a sidebar.
+mode = "light"
+
+background = "#ffffff"
+dark_background = "#f6f8fa"
+darker_background = "#eaeef2"
+lighter_background = "#f6f8fa"
+
+foreground = "#1f2328"
+dark_foreground = "#656d76"
+light_foreground = "#424a53"
+bright_foreground = "#1f2328"
+
+accent = "#0969da"
+selection = "#bbdfff"
+
+red = "#cf222e"
+yellow = "#9a6700"
+orange = "#bc4c00"
+green = "#1a7f37"
+cyan = "#1b7c83"
+blue = "#0969da"
+magenta = "#8250df"
