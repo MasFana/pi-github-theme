@@ -1,0 +1,129 @@
+/*
+ * GitHub High Contrast: the GitHub look for Pi Pocket, ported from the GitHub Theme for VS Code
+ * (https://github.com/primer/github-vscode-theme, MIT © GitHub, Inc.) and its Primer palette.
+ *
+ * A theme of its own: its own greys, syntax colors, and corners, with a dark and a light half in its colors files. The
+ * accent and the status colors follow Colors, so another palette keeps the layout and the type.
+ *
+ * Quiet text, each at 4.5:1 or more on its ground:
+ *   dark: GitHub's own #f0f3f6 — muted 17.6:1, faint 8.0:1 on #0a0c10.
+ *   light: GitHub's own #0e1116 — muted 18.9:1, faint 5.0:1 on #ffffff.
+ */
+
+/* ─── The look: GitHub's surfaces, lines, and text (dark) ─── */
+
+:root {
+    --desk: #010409;
+    --bg: #0a0c10;
+    --panel: #010409;
+    --card: #272b33;
+    --card-2: #4c525d;
+    --raised: #7a828e;
+    --hover: rgba(158, 167, 179, 0.1);
+    --pressed: rgba(158, 167, 179, 0.4);
+    --scrim: rgba(1, 4, 9, 0.8);
+    --code-bg: #272b33;
+
+    --line: #7a828e;
+    --line-strong: #9ea7b3;
+    --edge: rgba(158, 167, 179, 0.3);
+    --hair: rgba(158, 167, 179, 0.15);
+    --hair-2: rgba(158, 167, 179, 0.25);
+
+    --text: #ffffff;
+    --body: #f0f3f6;
+    --muted: #f0f3f6;
+    --faint: #9ea7b3;
+
+    /* GitHub's primary button is green (its blue, in Colorblind) whatever the colors are. */
+    --accent-fill: #09b43a;
+    --accent-ink: #0a0c10;
+
+    --hl-kw: #ff9492;
+    --hl-str: #addcff;
+    --hl-num: #91cbff;
+    --hl-fn: #dbb7ff;
+    --hl-type: #91cbff;
+    --hl-op: #ff9492;
+    --hl-tag: #72f088;
+
+    --sans: "Pocket Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", ui-sans-serif, system-ui,
+        Helvetica, Arial, sans-serif;
+    --mono: "Pocket Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+    --r-mark: 2px;
+    --r-tag: 3px;
+    --r-seg: 6px;
+    --r-row: 6px;
+    --r-control: 6px;
+    --r-card: 6px;
+    --r-window: 6px;
+    --r-sheet: 12px;
+    --r-float: 6px;
+    --r-pill: 999px;
+
+    --leading: 1.5;
+    --transcript-width: clamp(680px, 72%, 1012px);
+
+    --sh: rgba(1, 4, 9, 0.8);
+}
+
+/* GitHub High Contrast's light half. */
+:root[data-mode="light"] {
+    --desk: #ffffff;
+    --bg: #ffffff;
+    --panel: #ffffff;
+    --card: #e7ecf0;
+    --card-2: #acb6c0;
+    --raised: #88929d;
+    --hover: #e7ecf0;
+    --pressed: rgba(172, 182, 192, 0.2);
+    --scrim: rgba(1, 4, 9, 0.5);
+    --code-bg: #e7ecf0;
+
+    --line: #20252c;
+    --line-strong: #88929d;
+    --edge: rgba(1, 4, 9, 0.4);
+    --hair: rgba(1, 4, 9, 0.5);
+    --hair-2: rgba(1, 4, 9, 0.8);
+
+    --text: #0e1116;
+    --body: #0e1116;
+    --muted: #0e1116;
+    --faint: #66707b;
+
+    /* GitHub's primary button is green (its blue, in Colorblind) whatever the colors are. */
+    --accent-fill: #055d20;
+    --accent-ink: #ffffff;
+
+    --hl-kw: #a0111f;
+    --hl-str: #032563;
+    --hl-num: #023b95;
+    --hl-fn: #622cbc;
+    --hl-type: #023b95;
+    --hl-op: #a0111f;
+    --hl-tag: #024c1a;
+    --leading: 1.5;
+    --transcript-width: clamp(680px, 72%, 1012px);
+
+    --sh: rgba(31, 35, 40, 0.2);
+}
+
+/* ─── The parts that carry GitHub's shape ─── */
+
+/* A turn is GitHub's comment: a bordered box on the page's ground, not a raised card. */
+[data-part~="prompt"] {
+    background: var(--bg);
+    border-color: var(--line);
+    border-radius: var(--r-card);
+}
+
+/* A secondary button wears GitHub's hairline, as its buttons do. */
+.button {
+    border-color: var(--hair);
+}
+
+/* The open session: a grey fill, the way GitHub marks a chosen row, not the accent's own color. */
+[data-part~="session-button"][aria-current="page"] {
+    background: var(--card-2);
+}

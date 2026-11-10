@@ -1,0 +1,8 @@
+{
+    "themeApi": 1,
+    "name": "GitHub Classic",
+    "description": "GitHub's first look for VS Code, in GitHub Dark and GitHub Light as a pair: the older greys, the brighter syntax colors, and the green and blue accents of that palette.",
+    "author": "MasFana",
+    "version": "1.0.0",
+    "minPocket": "0.14.0"
+}

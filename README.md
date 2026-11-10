@@ -1,34 +1,41 @@
-# GitHub theme for Pi Pocket
+# GitHub themes for Pi Pocket
 
-GitHub's look for [Pi Pocket](https://github.com/TannerMidd/pi-pocket), ported from the
-[GitHub Theme for VS Code](https://github.com/primer/github-vscode-theme) (MIT, © GitHub, Inc.).
+GitHub's looks for [Pi Pocket](https://github.com/TannerMidd/pi-pocket), ported from the
+[GitHub Theme for VS Code](https://github.com/primer/github-vscode-theme) (MIT, © GitHub, Inc.). All nine VS Code themes
+are here, as five theme folders:
 
-The theme is the `github/` folder: GitHub Dark Default in `colors.toml`, GitHub Light Default in `colors-light.toml`
-as its light half, and the look — flat surfaces on 1px lines, 6px corners, the Primer blue accent, the green primary
-button, GitHub's syntax palette, GitHub's font stacks, and GitHub's reading width — in `theme.css`.
+| Folder | Themes | Colors |
+|---|---|---|
+| `github/` | GitHub (the default pair) | GitHub Dark Default, GitHub Light Default |
+| `github-dimmed/` | GitHub Dark Dimmed | GitHub Dark Dimmed |
+| `github-high-contrast/` | GitHub High Contrast | GitHub Dark High Contrast, GitHub Light High Contrast |
+| `github-colorblind/` | GitHub Colorblind | GitHub Dark Colorblind, GitHub Light Colorblind |
+| `github-classic/` | GitHub Classic | GitHub's first themes for VS Code: GitHub Dark, GitHub Light |
+
+Each folder is one theme: `theme.json`, `theme.css` (GitHub's greys, corners, font stacks, syntax palette, reading
+width, and its comment-shaped turns), and `colors.toml` — with `colors-light.toml` beside it when the theme brings a
+light half. A theme with a pair shows in Appearance → Colors three ways: the pair, which follows the system, and each
+half alone.
 
 ## Install
 
-Owner: Menu → Extensions → Discover, set the index to `MasFana/OMP`, refresh, install **GitHub**. Installation
-applies nothing: choose **GitHub** in Appearance → Theme, as each person does in their own browser. The pair and each
-half alone show under Colors too.
+Owner: Menu → Extensions → Discover, set the index to `MasFana/OMP`, refresh, install the ones you want. Installation
+applies nothing: choose one in **Appearance → Theme**, as each person does in their own browser.
 
-By hand: copy `github/` into `~/.pi-pocket/themes/`.
+By hand: copy the folders you want into `~/.pi-pocket/themes/`.
 
-## What it changes
+## What they change
 
 Tokens only, plus three parts: a turn drawn as GitHub's bordered comment (`prompt`), a secondary button's hairline
-(`.button`), and the open session's grey fill (`session-button`). `colors.toml` and `colors-light.toml` carry the
-palettes, so Appearance's Colors can put GitHub's look over other colors; the accent and the status colors follow them,
-while GitHub's neutrals, syntax colors, and primary-button green stay pinned, as they are on GitHub itself.
+(`.button`), and the open session's grey fill (`session-button`). The accent and the status colors follow Appearance's
+Colors, so another palette keeps the layout and the type; each theme's own greys, syntax colors, and primary-button
+green stay pinned, as they are on GitHub itself.
 
 `themeApi` 1, `minPocket` 0.14.0: no token newer than the first release with themes.
 
-## Not ported
-
-The extension's other variants — Dark Dimmed, Dark and Light High Contrast, Dark and Light Colorblind, and the classic
-Light and Dark — are palettes, not layouts. Each becomes a colors-only theme folder (`<id>/colors.toml`, no
-`theme.json`) that Appearance lists under Colors next to this theme; add one when it is wanted.
+Quiet text is at 4.5:1 or more on every ground. Where GitHub's own muted grey is dimmer than that (Dark Dimmed's
+`#768390` on `#22272e`, for one), `--muted` and `--faint` are mixed from the theme's text color instead; each
+`theme.css` names the value and its measured ratio.
 
 ## License
 

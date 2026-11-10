@@ -1,0 +1,8 @@
+{
+    "themeApi": 1,
+    "name": "GitHub Colorblind",
+    "description": "GitHub Colorblind: the GitHub look with the deuteranopia- and protanopia-safe palette, in Dark Colorblind and Light Colorblind as a pair.",
+    "author": "MasFana",
+    "version": "1.0.0",
+    "minPocket": "0.14.0"
+}

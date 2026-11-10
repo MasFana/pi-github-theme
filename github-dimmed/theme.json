@@ -1,0 +1,8 @@
+{
+    "themeApi": 1,
+    "name": "GitHub Dark Dimmed",
+    "description": "GitHub Dark Dimmed: the GitHub look on the dimmed palette, without a light half. GitHub's greys, 6px corners, its syntax colors, the green primary button.",
+    "author": "MasFana",
+    "version": "1.0.0",
+    "minPocket": "0.14.0"
+}
